@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary      
+pysqlite3-binary ; sys_platform == "win32" 
+pydantic
+passlib[bcrypt]
+python-jose[cryptography]
+python-multipart      
+jinja2
+starlette
