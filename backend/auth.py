@@ -4,8 +4,8 @@ from passlib.context import CryptContext
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
-from models import User
-from database import get_db
+from backend.models import User
+from backend.database import get_db
 
 # --- Config ---
 SECRET_KEY = "your_secret_key"  # Replace with env var in production
