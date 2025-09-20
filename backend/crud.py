@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-import models, schemas
+from backend import models, schemas
 from passlib.hash import bcrypt
 
 # ---------- User ----------
