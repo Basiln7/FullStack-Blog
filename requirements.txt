@@ -1,11 +1,9 @@
 fastapi
-uvicorn[standard]
+uvicorn
 sqlalchemy
-psycopg2-binary      
-pysqlite3-binary ; sys_platform == "win32" 
-pydantic
-passlib[bcrypt]
-python-jose[cryptography]
-python-multipart      
+databases
+python-multipart
 jinja2
-starlette
+pydantic[email]
+email-validator
+passlib[bcrypt]
