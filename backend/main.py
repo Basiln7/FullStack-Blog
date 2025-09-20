@@ -6,9 +6,9 @@ from sqlalchemy.orm import Session
 from typing import List
 import os
 
-from database import Base, engine, SessionLocal
+from backend.database import Base, engine, SessionLocal
 import models, schemas, crud
-from auth import create_access_token, verify_password, get_current_user
+from backend.auth import create_access_token, verify_password, get_current_user
 
 Base.metadata.create_all(bind=engine)
 
