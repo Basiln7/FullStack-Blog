@@ -7,7 +7,7 @@ from typing import List
 import os
 
 from backend.database import Base, engine, SessionLocal
-import models, schemas, crud
+from backend import models, schemas, crud
 from backend.auth import create_access_token, verify_password, get_current_user
 
 Base.metadata.create_all(bind=engine)
